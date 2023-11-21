@@ -1,16 +1,11 @@
-<<<<<<< HEAD
 import gradio
 import random
 import time
-
-=======
 import gradio as gr
->>>>>>> origin/main
 
 def greet(name):
     return "Hello " + name + "!!"
 
-<<<<<<< HEAD
 def respond(message,chat_history):
     bot_message = random.choice(["Hallo","comment cava ","J'ai faim"])
     chat_history.append((message,bot_message))
@@ -30,7 +25,5 @@ with gradio.Blocks() as app:
     message.submit(respond,[message,chatbot],[message,chatbot])
 
     app.launch(debug=True)
-=======
 iface = gr.Interface(fn=greet, inputs="text", outputs="text")
 iface.launch()
->>>>>>> origin/main
