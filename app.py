@@ -21,7 +21,7 @@ def respond(message,chat_history):
 with gradio.Blocks() as app:
     chatbot = gradio.Chatbot(label="Chatbox")
     message = gradio.Textbox()
-    bouton_envoye = gradio.Button("Envoyé")
+    bouton_envoye = gradio.Button("MOMO")
     clear = gradio.ClearButton([message, chatbot])
 
 
